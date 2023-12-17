@@ -7,6 +7,6 @@
   },
   "scripts": {
     "test": "cucumber-js",
-    "test-old": "cross-env NODE_OPTIONS='--loader ts-node/esm' cucumber-js"
+    "test-old": "cross-env NODE_OPTIONS='--loader ts-node/esm' cucumber-js -c cucumber-old.mjs"
   }
 }
