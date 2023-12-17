@@ -2,9 +2,11 @@
   "type": "module",
   "devDependencies": {
     "@cucumber/cucumber": "^10.0.1",
+    "cross-env": "^7.0.3",
     "ts-node": "^10.9.2"
   },
   "scripts": {
-    "test": "cucumber-js"
+    "test": "cucumber-js",
+    "test-old": "cross-env NODE_OPTIONS='--loader ts-node/esm' cucumber-js"
   }
 }
